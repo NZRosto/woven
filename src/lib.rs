@@ -1,5 +1,4 @@
-//! Future combinators and utilities.
-
+#![doc = include_str!("../README.md")]
 #![no_std]
 
 use core::future::Future;
@@ -123,6 +122,7 @@ macro_rules! impl_combinators {
         }
 
         /// An enum representing the output of a [`Race`] operation.
+        #[derive(Debug, Clone, Copy, PartialEq, Eq, PartialOrd, Ord, Hash)]
         pub enum $Either< $( $F ),* > {
             $(
                 #[doc = concat!("The ", stringify!($Nth), " possible value.")]

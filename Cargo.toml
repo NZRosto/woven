@@ -2,5 +2,21 @@
 name = "woven"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A simple set of async combinators, usable in a no_std environment."
+homepage = "https://github.com/NZRosto/woven"
+repository = "https://github.com/NZRosto/woven"
+readme = "README.md"
+keywords = ["combinators", "concurrency", "async", "no-std"]
+categories = ["asynchronous", "concurrency", "no-std", "no-std::no-alloc"]
+
+
+[lints]
+clippy.pedantic = "warn"
+
 
 [dependencies]
+
+
+[dev-dependencies]
+cassette = "0.3"
