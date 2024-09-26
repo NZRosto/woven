@@ -6,6 +6,8 @@ Because of it's simplicity, Woven doesn't implement granular wakers, so an execu
 
 ## Usage
 
+See [`cassette`](https://docs.rs/cassette/latest/cassette/) for the executor used in the examples.
+
 ### Join
 
 ```rust
